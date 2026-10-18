@@ -18,7 +18,7 @@ const order = ['10-figure', '00-core', '15-bodymap', '20-logic', '30-ui', '40-to
 const js = '(function(){\n' + order.map((f) => '/* ---- ' + f + ' ---- */\n' + rd('src/js/' + f + '.js')).join('\n') + '\n})();';
 const shell = rd('src/shell.html');
 const data = `<script type="application/json" id="azm-program">${safe(program)}</script>\n<script type="application/json" id="azm-figures">${safe(figures.poses)}</script>`;
-const title = '<title>عزم</title>';
+const title = '<title>تطبيق عزم</title>';
 const body = (standalone) => `${shell}\n${data}\n<script>window.AZM_STANDALONE=${standalone ? 'true' : 'false'};</script>\n<script>\n${js}\n</script>`;
 const hash = crypto.createHash('sha1').update(css + js + data).digest('hex').slice(0, 10);
 const touch = fs.existsSync(root + 'icons/apple-touch-icon.png') ? 'data:image/png;base64,' + fs.readFileSync(root + 'icons/apple-touch-icon.png').toString('base64') : 'icons/apple-touch-icon.png';
