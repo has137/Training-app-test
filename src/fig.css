@@ -1,0 +1,32 @@
+/* figure styles (shared by app and contact sheet) */
+.fig{width:100%;height:100%;display:block;overflow:visible}
+.fig line,.fig path{stroke-linecap:round;fill:none}
+.fh{stroke:var(--fig-bg)}
+.fn{stroke:var(--fig-ink)}
+.ff{stroke:var(--fig-far)}
+.fnf{fill:var(--fig-ink)}
+.fff{fill:var(--fig-far)}
+.fhd{stroke:var(--fig-bg);stroke-width:2.5}
+.ft{fill:var(--fig-ink);stroke:var(--fig-ink)}
+.fig .gh{opacity:.2}
+.fhl{stroke:var(--hl)}
+.fhlf{opacity:.62}
+.fhlp{fill:var(--hl);stroke:var(--hl)}
+.fhlc{fill:var(--hl);stroke:var(--fig-bg);stroke-width:2}
+.fdb{fill:var(--fig-iron)}
+.fdbi{fill:var(--fig-bg)}
+.fdbh{stroke:var(--fig-iron)}
+.fdbp{stroke:var(--fig-iron)}
+.fband{stroke:var(--fig-band);stroke-width:3;fill:none;stroke-linecap:round}
+.frope{stroke:var(--fig-iron);stroke-width:2.2;fill:none}
+.ffl{stroke:var(--fig-floor)}
+.fp{fill:var(--fig-prop)}
+.fpl{stroke:var(--fig-prop)}
+.fball{fill:var(--fig-band)}
+.fbag{fill:var(--fig-bag);stroke:var(--fig-iron);stroke-width:2}
+.far{stroke:var(--hl);stroke-width:2;stroke-dasharray:4 4;fill:none}
+.fahd{fill:var(--hl)}
+.fgrid{fill:var(--fig-grid);stroke:var(--fig-floor)}
+.ffoot{fill:var(--fig-far)}
+.ffoot.ld{fill:var(--hl)}
+.flbl{font-size:11px;fill:var(--fig-label);font-family:inherit}
